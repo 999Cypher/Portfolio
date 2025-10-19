@@ -27,6 +27,15 @@ This project uses [`next/font`](https://nextjs.org/docs/app/building-your-applic
 
 This site is configured to be deployed to GitHub Pages using GitHub Actions. The deployment happens automatically when changes are pushed to the main branch.
 
+### Setup Requirements
+
+To enable GitHub Pages deployment:
+
+1. **Enable GitHub Pages**: Go to your repository Settings → Pages
+2. **Set Source**: Under "Build and deployment", select "GitHub Actions" as the source
+3. **Merge this PR**: Once this PR is merged to main, the deployment will trigger automatically
+4. **Access your site**: Your site will be available at `https://999Cypher.github.io/Portfolio/`
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:
