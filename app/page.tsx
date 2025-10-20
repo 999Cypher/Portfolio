@@ -29,7 +29,7 @@ const AboutSection = () => {
               <h3 className="text-2xl mb-4 font-mono tracking-wide">CYPHER<span className="text-neon-blue">.</span></h3>
               
               <p className="mb-4 font-light leading-relaxed">
-                Full stack developer with expertise in cybersecurity and blockchain technologies. 
+                An Electronic and Computer Engineer with expertise in cybersecurity and blockchain technologies. 
                 I build secure, scalable, and innovative web applications that push the boundaries 
                 of what's possible in the digital realm.
               </p>
@@ -94,8 +94,8 @@ const ExperienceSection = () => {
             <div className="absolute top-0 right-0 bg-cyber-navy px-2 py-1 text-xs font-mono border-l border-b border-neon-blue/30">
               2022 - PRESENT
             </div>
-            
-            <h3 className="text-xl mb-1 font-mono">SENIOR DEVELOPER</h3>
+
+            <h3 className="text-xl mb-1 font-mono">JKUAT</h3>
             <h4 className="text-neon-blue text-sm mb-4">CYBER SYSTEMS INC</h4>
             
             <ul className="space-y-3 text-sm">
@@ -127,7 +127,7 @@ const ExperienceSection = () => {
               2019 - 2022
             </div>
             
-            <h3 className="text-xl mb-1 font-mono">FRONTEND DEVELOPER</h3>
+            <h3 className="text-xl mb-1 font-mono">FREELANCER</h3>
             <h4 className="text-neon-blue text-sm mb-4">DIGITAL NEXUS LABS</h4>
             
             <ul className="space-y-3 text-sm">
