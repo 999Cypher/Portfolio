@@ -1,36 +1,126 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Cyber-Themed CV Portfolio
+
+A minimalist, unique CV website with a cyber-themed design featuring glowing accents, geometric patterns, and a modern, clean aesthetic.
+
+![Cyber CV Preview](https://placehold.co/600x400/05D9E8/1E213F?text=Cyber+CV+Portfolio&font=montserrat)
+
+## Features
+
+- Responsive design with mobile-friendly navigation
+- Dark theme with neon accent colors
+- Interactive elements with subtle animations
+- Comprehensive sections for displaying professional information:
+  - About
+  - Experience
+  - Projects
+  - Skills
+  - Contact
+
+## Tech Stack
+
+- Next.js 14
+- React 18
+- TypeScript
+- Tailwind CSS
+- CSS Animations and Transitions
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
 
+- Node.js (version 18 or later recommended)
+- npm or yarn
+
+### Installation
+
+1. Clone the repository:
+```bash
+git clone https://github.com/yourusername/cyber-portfolio.git
+cd cyber-portfolio
+```
+
+2. Install dependencies:
+```bash
+npm install
+# or
+yarn install
+```
+
+3. Start the development server:
 ```bash
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+4. Open [http://localhost:3000](http://localhost:3000) in your browser to view the site.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Customization
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Updating Content
 
-## Learn More
+Edit the following files to customize your portfolio:
 
-To learn more about Next.js, take a look at the following resources:
+- `app/page.tsx`: Contains the main content sections (About, Experience, Projects, Skills, Contact)
+- `components/Sidebar.tsx`: Navigation sidebar and profile information
+- `app/globals.css`: Global styles and CSS variables
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Changing Colors
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+The color scheme can be modified in the `tailwind.config.cjs` file. Look for the `colors` section:
 
-## Deploy on Vercel
+```js
+colors: {
+  'cyber-black': '#0A0A0F',
+  'cyber-dark': '#131320',
+  'cyber-navy': '#1E213F',
+  'cyber-gray': '#2C2C3B',
+  'cyber-light': '#E6E6EC',
+  'neon-blue': '#05D9E8',
+  'neon-purple': '#AD1AAF',
+  'neon-pink': '#FF3864',
+  'neon-green': '#39FF14',
+},
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Adding Profile Image
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Replace the placeholder image at `public/profile-placeholder.jpg` with your own image.
+
+## Design Elements
+
+### Cyber Theme Components
+
+- **Glowing Accents**: Neon borders and text with shadow effects
+- **Geometric Patterns**: Grid backgrounds and angular shapes
+- **Dark Theme with Vibrant Accents**: Dark background with bright neon highlights
+- **Interactive Elements**: Hover animations and transitions
+- **Modern Typography**: Clean sans-serif and monospace fonts
+
+## Building for Production
+
+To create an optimized production build:
+
+```bash
+npm run build
+# or
+yarn build
+```
+
+To start the production server:
+
+```bash
+npm run start
+# or
+yarn start
+```
+
+## License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+## Acknowledgements
+
+- Fonts from Google Fonts
+- Icons from Heroicons
+- Next.js framework by Vercel

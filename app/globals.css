@@ -2,7 +2,123 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  @apply bg-gradient-to-br from-gray-900 via-gray-800 to-black text-white min-h-screen;
-  font-family: 'Fira Mono', 'Menlo', 'Monaco', 'Consolas', monospace;
+:root {
+  --grid-size: 30px;
+  --grid-strength: 0.05;
+}
+
+@layer base {
+  body {
+    @apply bg-cyber-black text-cyber-light min-h-screen font-sans;
+    background-image: 
+      linear-gradient(to right, rgba(5, 217, 232, var(--grid-strength)) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(5, 217, 232, var(--grid-strength)) 1px, transparent 1px);
+    background-size: var(--grid-size) var(--grid-size);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-mono font-bold;
+  }
+  
+  h1 {
+    @apply text-3xl md:text-4xl lg:text-5xl;
+  }
+  
+  h2 {
+    @apply text-2xl md:text-3xl lg:text-4xl;
+  }
+  
+  h3 {
+    @apply text-xl md:text-2xl;
+  }
+
+  a {
+    @apply text-neon-blue transition-all duration-300;
+  }
+
+  a:hover {
+    @apply text-neon-blue brightness-125;
+  }
+}
+
+@layer components {
+  .neon-border {
+    @apply border border-neon-blue/50 shadow-neon;
+  }
+  
+  .neon-text {
+    @apply text-neon-blue animate-glow;
+  }
+  
+  .cyber-panel {
+    @apply bg-cyber-dark/80 backdrop-blur-sm border border-cyber-gray/50 rounded-md p-6;
+  }
+  
+  .cyber-button {
+    @apply px-4 py-2 bg-cyber-navy border-l-2 border-t-2 border-r-2 border-b-4 border-neon-blue/70
+      text-cyber-light hover:bg-neon-blue/10 hover:text-white transition-all duration-300
+      focus:outline-none focus:ring-2 focus:ring-neon-blue/50 font-mono uppercase tracking-wider;
+  }
+
+  .nav-item {
+    @apply p-3 border-l-2 border-transparent hover:border-neon-blue 
+      transition-all duration-300 cursor-pointer flex items-center gap-2
+      hover:bg-neon-blue/5 hover:translate-x-1;
+  }
+
+  .nav-item.active {
+    @apply border-l-2 border-neon-blue text-neon-blue bg-cyber-navy/30;
+  }
+  
+  /* Progress bar for skills */
+  .skill-progress {
+    @apply h-2 bg-cyber-gray rounded-full overflow-hidden;
+  }
+  
+  .skill-progress-bar {
+    @apply h-full bg-gradient-to-r from-neon-blue to-neon-purple transition-all duration-700;
+  }
+  
+  /* Card hover effect */
+  .cyber-card {
+    @apply relative bg-cyber-navy/40 rounded-md p-5 border border-cyber-gray/30
+      transition-all duration-300 hover:border-neon-blue/50 hover:shadow-neon overflow-hidden;
+  }
+  
+  .cyber-card::before {
+    content: "";
+    @apply absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-neon-blue to-transparent opacity-50;
+  }
+}
+
+/* Geometric patterns and decorations */
+.cyber-corner {
+  position: relative;
+}
+
+.cyber-corner::before, 
+.cyber-corner::after {
+  content: '';
+  @apply absolute w-4 h-4 border-neon-blue/70;
+}
+
+.cyber-corner::before {
+  @apply top-0 left-0 border-t-2 border-l-2;
+}
+
+.cyber-corner::after {
+  @apply bottom-0 right-0 border-b-2 border-r-2;
+}
+
+/* Custom scroll bar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-cyber-dark;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-neon-blue/50 hover:bg-neon-blue rounded-full;
 }
