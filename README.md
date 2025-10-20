@@ -35,7 +35,7 @@ A minimalist, unique CV website with a cyber-themed design featuring glowing acc
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/cyber-portfolio.git
+git clone https://github.com/999Cypher/cyber-portfolio.git
 cd cyber-portfolio
 ```
 
